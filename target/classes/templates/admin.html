@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Admin</title>
+  <link rel="icon" href="/armyLogo1.jpg" type="image/x-icon ">
+  <style>
+
+
+.textslide h1 {
+          width: 300px;
+          padding: 70px;
+          font-family: "Prototype";
+          text-align: center;
+          margin-left: 450px;
+        }
+
+       
+        .slide li {
+          float: right;
+        }
+       
+
+        @font-face {
+          font-family: "Prototype";
+        }
+        body {
+          margin: 0px;
+        }
+
+        .nav {
+          font-family: "Prototype";
+        }
+        .nav a {
+          text-decoration: none;
+          color: white;
+          font-size: 15px;
+        }
+
+        .nav ul,
+        li {
+          justify-content: center;
+          display: flex;
+          padding-right: 15px;
+          color: white;
+        }
+        .nav li a:hover {
+          color: #000000;
+          font-size: 18px;
+        }
+        .box2 {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          height: 900px;
+          background-color: #b8b38d;
+        }
+     
+        .isi p {
+          font-family: Arial;
+          color: white;
+          font-size: 30px;
+          margin-left: -1100px;
+          width: 250px;
+          margin-top: 150px;
+          text-shadow: black 2px 5px 5px;
+        }
+        .isi2 {
+          display: flex;
+          justify-content: flex-start;
+        }
+
+      
+        .slide a {
+          font-family: arial;
+          text-decoration: none;
+          margin-left: -1300px;
+        }
+        .slide p {
+          font-size: 25px;
+          font-family: "Prototype";
+          margin-top: 250px;
+          color: white;
+          text-shadow: black 2px 5px 5px;
+        }
+        .slide p:hover {
+          color: crimson;
+          font-size: 30px;
+        }
+        .slide1 a {
+          font-family: arial;
+          text-decoration: none;
+        }
+        .slide1 p {
+          font-size: 25px;
+          font-family: "Prototype";
+          margin-left: -100px;
+          margin-top: 280px;
+          width: 60px;
+          color: white;
+          text-shadow: black 2px 5px 5px;
+        }
+        .slide1 p:hover {
+          color: crimson;
+          font-size: 30px;
+        }
+        .isi1 h1 {
+          margin-top: 185px;
+          margin-right: 850px;
+          color: #ffba19;
+          font-family: "Prototype";
+          margin-left: 300px;
+        }
+        .isi1 h2 {
+          margin-top: -35px;
+          font-size: 15px;
+          margin-left: 200px;
+          width: 100px;
+          font-family: "Prototype";
+          color: white;
+        }
+        .isi1 p {
+          margin-top: -5px;
+          font-size: 11px;
+          margin-left: 200px;
+          width: 100px;
+          font-family: "arial";
+          color: white;
+        }
+        .yang2 h1 {
+          font-family: "Prototype";
+          color: #ffba19;
+          margin-left: -150px;
+          margin-top: -59px;
+        }
+        .yang3 h1 {
+          font-family: "Prototype";
+          color: #ffba19;
+          margin-left: 460px;
+          margin-top: -59px;
+        }
+        .isibox4-2 h2 {
+          margin-top: -15px;
+          margin-left: -25px;
+          font-size: 18px;
+          color: #ff6d00;
+        }
+        .box5 img {
+          margin-left: 80px;
+          margin-top: 15px;
+        }
+        .box5 p {
+          color: #263238;
+          font-family: "Prototype";
+          margin-top: 0px;
+          margin-left: 50px;
+        }
+        .boxbg2-1 h1 {
+          margin-left: -30px;
+          margin-top: -110px;
+          padding: 180px;
+          color: white;
+          font-family: "Prototype";
+          font-size: 50px;
+        }
+        .tx1 p {
+          margin-left: 290px;
+          font-family: "Arial";
+          width: 100px;
+          margin-top: -262px;
+          color: white;
+        }
+        .tx2 p {
+          margin-top: -50px;
+          color: white;
+          margin-left: 710px;
+          font-family: "Arial";
+          width: 100px;
+        }
+        .tx3 p {
+          margin-top: -52px;
+          margin-left: 1125px;
+          font-family: "Arial";
+          width: 100px;
+          color: white;
+        }
+        .boxbg3 h1 {
+          text-align: center;
+          width: 400px;
+          padding: 80px;
+          font-family: "Prototype";
+        }
+        .boxbg3 p {
+          font-family: "Prototype";
+          color: #ff6d00;
+          margin-top: 185px;
+          margin-left: -555px;
+        }
+        .isibox6-1 h1 {
+          color: #bbdefb;
+          margin-top: -20px;
+          font-size: 110px;
+          font-family: "Prototype";
+          margin-left: 0px;
+          opacity: 0.2;
+        }
+        .isibox6-1 h2 {
+          font-family: "Prototype";
+          text-align: center;
+          margin-top: -140px;
+        }
+        .isibox6-1 p {
+          margin-left: 50px;
+          width: 200px;
+          text-align: inherit;
+          font-family: "Arial";
+        }
+        .boxwork1 h1 {
+          padding: 50px;
+          font-family: "Prototype";
+          font-size: 60px;
+          color: white;
+          text-align: center;
+          width: 280px;
+        }
+
+        .boxwork2 h1 {
+          margin-top: 30px;
+          width: 500px;
+          margin-left: 30px;
+          font-family: "Prototype";
+          font-size: 20px;
+        }
+        .boxwork2 p {
+          margin-right: 30px;
+          width: 280px;
+          font-size: 12px;
+          font-family: "Arial";
+          margin-top: -5px;
+          margin-left: 30px;
+        }
+        .boxdalam p {
+          margin-top: -10px;
+          font-size: 14px;
+          margin-left: -150px;
+          color: #ff6d00;
+        }
+        .team h1 {
+          font-size: 100px;
+          opacity: 0.3;
+          padding-top: 60px;
+          margin-left: 80px;
+        }
+        .team1 h2 {
+          text-align: center;
+          margin-top: 0px;
+          font-family: "Prototype";
+        }
+        .team1 p {
+          font-family: "Arial";
+          margin-top: -15px;
+          text-align: center;
+        }
+
+        .team2 h2 {
+          text-align: center;
+          margin-top: 0px;
+          font-family: "Prototype";
+        }
+        .team2 p {
+          font-family: "Arial";
+          margin-top: -15px;
+          text-align: center;
+        }
+
+        .team3 h2 {
+          text-align: center;
+          margin-top: 0px;
+          font-family: "Prototype";
+        }
+        .team3 p {
+          font-family: "Arial";
+          margin-top: -15px;
+          text-align: center;
+        }
+        .boxdalamskil h1 {
+          margin-top: 50px;
+          text-align: center;
+          font-family: "Prototype";
+          color: white;
+        }
+        .boxdalamskil2 h1 {
+          margin-top: 50px;
+          text-align: center;
+          font-family: "Prototype";
+          color: white;
+        }
+        .akhir h1 {
+          width: 300px;
+          margin-top: 0px;
+          font-family: "Prototype";
+          color: white;
+        }
+        .akhir a {
+          margin-bottom: 5px;
+          font-size: 13px;
+          font-family: "Arial";
+          text-decoration: none;
+          color: white;
+        }
+        .akhir ul {
+          margin-top: 40px;
+          margin-left: -340px;
+        }
+        .boxmaps h1 {
+          color: white;
+          font-family: "Prototype";
+          font-size: 15px;
+        }
+        footer {
+          margin-top: 40px;
+          color: white;
+          text-align: center;
+        }
+    
+        .box {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          height: 100px;
+          background: #4b5320;
+          align-items: center;
+        }
+
+        .logo h1 {
+          font-family: "Prototype";
+          color: white;
+          margin-left: 150px;
+          margin-top: 0px;
+        }
+        .box2 img {
+          width: 90.50%;
+          height: 900px;
+          padding-left: 400px;
+        }
+        .isi2 h1 {
+          font-size: 30px;
+          width: 100px;
+          text-align: center;
+          font-family: "Prototype";
+          margin-left: -1400px;
+          margin-top: 200px;
+          color: white;
+          text-shadow: black 2px 5px 5px;
+        }
+
+        .logo img {
+          margin-top: 5px;
+          width: 200px;
+          border-radius: 100%;
+          background-color: #4b5320;
+        }
+
+  </style>
+</head>
+<body>
+<div class="box">
+  <div class="logo">
+    <h1>Military Managment System</h1>
+  </div>
+  <nav class="nav">
+    <ul>
+      <li><a th:href="@{/}">Home</a></li>
+      <li><a th:href="@{/home}">View</a></li>
+      <li><a th:href="@{/reg}">Register soldier</a></li>
+      <li sec:authorize="isAuthenticated()"><a th:href="@{/login}">Logout</a></li>
+
+    </ul>
+  </nav>
+</div>
+
+<div class="box2">
+  <div class="last">
+      <img src="" th:src="@{/f.jpg}"  />
+    </div>
+  <div class="isi">
+    <center><font color="white" size="14"></font></center>
+  </div>
+  <div class="isi2">
+    <h1>Welcome to the admin Portal</h1>
+  </div>
+ 
+</div>
+
+</div>
+</footer>
+</body>
+</html>

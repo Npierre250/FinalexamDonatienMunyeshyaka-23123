@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>#home</title>
+  <link rel="icon" href="/armyLogo1.jpg" type="image/x-icon " />
+  <link rel="icon" type="image/x-icon" href="/armyLogo1.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="/images/logo.jpeg" type="image/x-icon" />
+  <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .container {
+      min-height: 100vh;
+      width: 100%;
+    }
+    .dropdown-content a {
+      float: none;
+      color: white;
+      padding: 20px 12px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+
+    /* Change color on hover */
+    .dropdown-content a:hover {
+      color: #f44336;
+      border-radius: 3px;
+    }
+
+
+    nav {
+      display: flex;
+      padding: 2% 6%;
+      justify-content: space-between;
+      align-items: center;
+      background: #4b5320;
+      height: 60px;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav img {
+      width: 185px;
+      border-radius: 100%;
+      margin-left: -90px;
+    }
+
+    .nav-links {
+      flex: 1;
+      text-align: right;
+    }
+
+    .nav-links ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 28px 12px;
+      position: relative;
+    }
+
+    .nav-links ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .nav-links ul li::after {
+      content: "";
+      width: 10%;
+      height: 2px;
+      background: #f44336;
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+    }
+body{
+  width: 100%;
+  height: 1000px;
+}
+    .nav-links ul li:hover::after {
+      width: 100%;
+    }
+
+    .text-box h1 {
+      font-size: 62px;
+    }
+    .text-box p {
+      margin: 10px 0 40px;
+      font-size: 14px;
+      color: #fff;
+    }
+    @media (max-width: 1000px) {
+      .text-box h1 {
+        font-size: 20px;
+      }
+
+      .nav-links ul li {
+        display: block;
+      }
+
+      .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+      }
+
+
+      .nav-links ul {
+        padding: 30px;
+      }
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 600;
+    }
+
+    p {
+      color: #777;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      padding: 10px;
+    }
+    .text-box{
+      width: 90%;
+      color: #000000;
+      position:absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%,0%);
+      text-align: center;
+      font-weight: bold;
+    }
+    .text-box p{
+      color: #000000;
+
+    }
+
+    .text-box a{
+      color: blue;
+
+
+    }
+    .text-box :hover{
+      color: #8B4513;
+
+    }
+
+    @media screen and(max-width:800px) {
+
+      nav {
+        width: 100%;
+      }
+    }
+  </style>
+
+</head>
+<body>
+<div class="form-main-wrapper">
+  <div class="formbold-formwrapper">
+    <section class="container">
+      <nav>
+        <a th:href="@{/contacts}"> <img src="/armyLogo1.jpg" alt="" /></a>
+        <h1>Welcome to Military Management System</h1>
+        <div class="nav-links" id="nav-links">
+          <ul>
+            <li><a th:href="@{/}">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="text-box">
+        <p>The Rwanda Defence Force (RDF, Kinyarwanda: Ingabo z'u Rwanda, French: Forces rwandaises de défense, Swahili: Nguvu ya Ulinzi ya Watu wa Rwanda) is the military of the Republic of Rwanda. The country's armed forces were originally known as the Rwandan Armed Forces (FAR), but following the Rwandan Civil War of 1990–1994 and the Rwandan genocide of 1994 against the Tutsi, the victorious Rwandan Patriotic Front (Inkotanyi) created a new organization and named it the Rwandan Patriotic Army (RPA). Later, it was renamed to its current name.
+
+          The Rwanda Defence Force’s mission as provided in the Constitution of Rwanda is:
+
+          to defend the territorial integrity and the national sovereignty of the Republic;
+          to collaborate with other security organs in safe-guarding public order and enforcement of law;
+          to participate in humanitarian activities in case of disasters;
+          to contribute to the development of the country;
+          to participate in international peace-keeping missions, humanitarian assistance and training.
+          After it conquered the country in July 1994 in the aftermath of the Rwandan genocide of April to July 1994, the Rwandan Patriotic Front (RPF) decided to split into a political division (which retained the RPF name) and a military division, which would serve as the official army of the Rwandan state.
+          Defence spending continues to represent an important share of the national budget, largely due to continuing security problems along Rwanda's frontiers with the Democratic Republic of the Congo and Burundi, and lingering concerns about Uganda's intentions towards its former ally.
+          There is an ongoing, low-level insurgency from Rwandan rebels based in the Democratic Republic of the Congo, mainly the Forces démocratiques de libération du Rwanda (or FDLR).
+          The RDF is regularly deployed in peacekeeping missions in Africa. Rwanda is now one of the largest contributors of personnel on UN missions.<a href="https://apps.dtic.mil/sti/pdfs/ADA490564.pdf">
+            PFD book about Rwanda Defence Force</a> and <a href="https://www.mod.gov.rw/rdf/awards">the all Awards were taken place here </a> </p>
+
+
+        <p>The Rwanda Defence Force (RDF) was previously a liberation force known as the Rwanda Patriotic Army (RPA).
+          The Law No 19/2002 of 17/05/2002 renamed the RPA as the Rwanda Defence Force.
+          For about all information this is a <a href="https://www.mod.gov.rw/news/army" > News room of RDF</a>
+          Since 2002, the RDF adopted a Joint Structure with a Chief of Defence Staff at the helm of the Defence Force. He is the Joint Commander. The Structure and Force design offer flexibility required to respond to a variety of contingencies.
+        Everyone take a time for to know Rwanda army history and<a href="https://en.wikipedia.org/wiki/Rwanda_Defence_Force">  all aims have </a></p>
+        <h3 >Connect with us</h3>
+        <p><a href="https://www.mod.gov.rw/contact"> Contact us -> or </a> use Cell phone : +250 788 310 178<br>E-mail: info@mod.gov.rw</p>
+        <h3 class="par">Connect with Our Media</h3>
+        <a href="  https://twitter.com/RwandaMoD  "><h3>twitter or X</h3> </a>
+        <a href="https://www.youtube.com/user/RwandaDefenceForce"><h3>Youtube</h3></a>
+        <a href="https://www.linkedin.com/company/rwanda-defence-force/"><h3>Linkedin</h3></a>
+        <a href="https://www.instagram.com/rwanda_defence_force/"><h3>Instagram</h3></a>
+
+
+      </div>
+      <div id="display"></div>
+    </section>
+  </div>
+</div>
+</body>
+</html>

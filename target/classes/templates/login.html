@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Login First</title>
+    <link rel="icon" href="/armyLogo1.jpg" type="image/x-icon ">
+    <style>
+        .textslide h1{
+            width: 300px;
+            padding: 70px;
+            font-family: 'Prototype';
+            text-align: center;
+            margin-left: 450px;
+        }
+        .textslide p{
+            margin-top: -80px;
+            text-align: center;
+            font-size: 15px;
+            font-family: fantasy;
+            color: #FF6D00;
+        }
+        .slide ul{
+            margin-top: 100px;
+            max-width:100%;
+            overflow-x:auto;}
+        .slide li{
+            float:right;}
+        .slide ul, .slide li {
+            list-style:none;
+            display:inline-block;
+            white-space:nowrap;
+            margin:0;
+            padding:0;}
+        .slide img {
+            width:100%;
+            height:260px;
+        }
+        .button1 {
+            margin-top: 35px;
+            height: 50px;
+            margin-left: -10px;
+            padding: 2px 25px;
+            font-size: 17px;
+            cursor: pointer;
+            text-decoration: none;
+            color: #fff;
+            background-color: #607D8B;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;}
+        .button1:hover {background-color: #546E7A}
+        .button1:active {
+            background-color: #455A64;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        @font-face {
+            font-family: 'Prototype';
+        }
+        body{ margin: 0px; }
+        .box{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 100px;
+            background:#4B5320;
+            align-items: center; }
+
+        .logo h1{
+            font-family: 'Prototype';
+            color: white;
+            margin-left: 50px; }
+
+        .nav{ font-family: 'Prototype'; }
+        .nav a{
+            text-decoration:  none;
+            color: white;
+            font-size: 15px; }
+        .nav ul, li{
+            justify-content: center;
+            display: flex;
+            padding-right: 15px;
+            color: white; }
+        .nav li a:hover{
+            color: #000000;
+            font-size: 18px;}
+        .box2{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 800px;
+            background-color: #B8B38D;
+        }
+        .box2 img{
+            width: 100%;
+            height: 600px;}
+        .isi p{
+            font-family: Arial;
+            color: white;
+            font-size: 30px;
+            margin-left: -1400px;
+            width: 250px;
+            margin-top: 150px;
+            text-shadow: black 2px 5px 5px;}
+        .isi2{
+            display:flex ;
+            justify-content: flex-start;
+
+        }
+
+        .isi2 h1{
+            font-size: 30px;
+            width: 100px;
+            text-align: center;
+            font-family: 'Prototype';
+            margin-left: -1300px;
+            margin-top: 180px;
+            color: white;
+            text-shadow: black 2px 5px 5px;}
+        .slide a{
+            font-family: arial;
+            text-decoration: none;
+            margin-left: -1300px;}
+        .slide p{
+            font-size: 25px;
+            font-family: 'Prototype';
+            margin-top: 250px;
+            color: white;
+            text-shadow: black 2px 5px 5px;}
+        .slide p:hover{
+            color:crimson;
+            font-size: 30px;}
+        .slide1 a{
+            font-family: arial;
+            text-decoration: none;}
+        .slide1 p{
+            font-size: 25px;
+            font-family: 'Prototype';
+            margin-left: -100px;
+            margin-top: 280px;
+            width: 60px;
+            color: white;
+            text-shadow: black 2px 5px 5px;}
+        .slide1 p:hover{
+            color:crimson;
+            font-size: 30px;}
+        .isi1 h1{
+            margin-top: 185px;
+            margin-right: 850px;
+            color: #ffba19;
+            font-family: 'Prototype';
+            margin-left: 300px;}
+        .isi1 h2{
+            margin-top: -35px;
+            font-size: 15px;
+            margin-left: 200px;
+            width: 100px;
+            font-family: 'Prototype';
+            color: white;}
+        .isi1 p{
+            margin-top: -5px;
+            font-size: 11px;
+            margin-left: 200px;
+            width: 100px;
+            font-family: 'arial';
+            color: white;}
+        .yang2 h1{
+            font-family: 'Prototype';
+            color: #ffba19;
+            margin-left: -150px;
+            margin-top: -59px;}
+        .yang3 h1{
+            font-family: 'Prototype';
+            color: #ffba19;
+            margin-left: 460px;
+            margin-top: -59px;
+        }
+        .isibox4-2 h2{
+            margin-top: -15px;
+            margin-left: -25px;
+            font-size: 18px;
+            color: #FF6D00;
+        }
+        .box5 img{
+            margin-left: 80px;
+            margin-top: 15px;}
+        .box5 p{
+            color: #263238;
+            font-family: 'Prototype';
+            margin-top: 0px;
+            margin-left: 50px;
+        }
+        .boxbg2-1 h1{
+            margin-left: -30px;
+            margin-top: -110px;
+            padding: 180px;
+            color: white;
+            font-family: 'Prototype';
+            font-size: 50px;}
+        .tx1 p{
+            margin-left: 290px;
+            font-family: 'Arial';
+            width: 100px;
+            margin-top: -262px;
+            color: white;}
+        .tx2 p{
+            margin-top: -50px;
+            color: white;
+            margin-left: 710px;
+            font-family: 'Arial';
+            width: 100px;}
+        .tx3 p{
+            margin-top: -52px;
+            margin-left: 1125px;
+            font-family: 'Arial';
+            width: 100px;
+            color: white;
+        }
+        .boxbg3 h1{
+            text-align: center;
+            width: 400px;
+            padding: 80px;
+            font-family: 'Prototype';
+        }
+        .boxbg3 p{
+            font-family: 'Prototype';
+            color: #FF6D00;
+            margin-top: 185px;
+            margin-left: -555px;
+        }
+        .isibox6-1 h1{
+            color: #BBDEFB;
+            margin-top: -20px;
+            font-size: 110px;
+            font-family: 'Prototype';
+            margin-left: 0px;
+            opacity: 0.2; }
+        .isibox6-1 h2{
+            font-family: 'Prototype';
+            text-align: center;
+            margin-top: -140px;}
+        .isibox6-1 p{
+            margin-left: 50px;
+            width: 200px;
+            text-align:inherit;
+            font-family: 'Arial';
+        }
+        .boxwork1 h1{
+            padding: 50px;
+            font-family: 'Prototype';
+            font-size: 60px;
+            color: white;
+            text-align: center;
+            width: 280px;}
+        .boxwork2 h1{
+            margin-top: 30px;
+            width: 100px;
+            width: 500px;
+            margin-left: 30px;
+            font-family: 'Prototype';
+            font-size: 20px;}
+        .boxwork2 p{
+            margin-right: 30px;
+            width: 280px;
+            font-size: 12px;
+            font-family: 'Arial';
+            margin-top: -5px;
+            margin-left: 30px;
+        }
+        .boxdalam p{
+            margin-top: -10px;
+            font-size: 14px;
+            margin-left: -150px;
+            color: #FF6D00;
+        }
+        .team h1{
+            font-size: 100px;
+            opacity: 0.3;
+            padding-top: 60px;
+            margin-left: 80px;
+        }
+        .team1 h2{
+            text-align: center;
+            margin-top: 0px;
+            font-family: 'Prototype';
+        }
+        .team1 p{
+            font-family: 'Arial';
+            margin-top: -15px;
+            text-align: center;
+        }
+        .team2 h2{
+            text-align: center;
+            margin-top: 0px;
+            font-family: 'Prototype';
+        }
+        .team2 p{
+            font-family: 'Arial';
+            margin-top: -15px;
+            text-align: center;
+        }
+        .team3 h2{
+            text-align: center;
+            margin-top: 0px;
+            font-family: 'Prototype';
+        }
+        .team3 p{
+            font-family: 'Arial';
+            margin-top: -15px;
+            text-align: center;
+        }
+        .boxdalamskil h1{
+            margin-top: 50px;
+            text-align: center;
+            font-family: 'Prototype';
+            color: white;
+        }
+        .boxdalamskil2 h1{
+            margin-top: 50px;
+            text-align: center;
+            font-family: 'Prototype';
+            color: white;
+        }
+        .user-box{
+            padding: 0.2em;
+            font-size: 20px;
+
+        }
+        .akhir h1{
+            width: 300px;
+            margin-top: 0px;
+            font-family: 'Prototype';
+            color: white;
+        }
+        .akhir a{
+            margin-bottom: 5px;
+            font-size: 13px;
+            font-family: 'Arial';
+            text-decoration: none;
+            color: white;
+        }
+        .akhir ul{
+            margin-top: 40px;
+            margin-left: -340px;
+        }
+
+
+        .boxmaps h1{
+            color: white;
+            font-family: 'Prototype';
+            font-size: 15px;
+        }
+        footer{
+            margin-top: 40px;
+            color: white;
+            text-align: center;
+        }
+        .login-box {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            width: 400px;
+            padding: 40px;
+            transform: translate(-50%, -50%);
+            background: #4B5320;
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgba(0,0,0,.6);
+            border-radius: 10px;
+        }
+
+        .login-box .user-box {
+            position: relative;
+        }
+
+        .login-box .user-box input {
+            width: 100%;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 0;
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background: transparent;
+        }
+
+        .login-box .user-box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .login-box .user-box input:focus ~ label,
+        .login-box .user-box input:valid ~ label {
+            top: -20px;
+            left: 0;
+            color: #bdb8b8;
+            font-size: 12px;
+        }
+
+        .login-box form a {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #ffffff;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: .5s;
+            margin-top: 40px;
+            letter-spacing: 4px
+        }
+
+        .login-box a:hover {
+            background: #03f40f;
+            color: #8B4513;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #03f40f,
+            0 0 25px #03f40f,
+            0 0 50px #03f40f,
+            0 0 100px #03f40f;
+        }
+
+        .login-box a span {
+            position: absolute;
+            display: block;
+        }
+        .box{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 100px;
+            background:#4B5320;
+            align-items: center;
+        }
+        .logo img{
+            margin-top: 0px;
+            width:140px;
+            border-radius: 100%;
+            background-color:#4B5320 ;
+        }
+
+        @keyframes btn-anim1 {
+            0% {
+                left: -100%;
+            }
+
+            50%,100% {
+                left: 100%;
+            }
+        }
+
+        .login-box a span:nth-child(1) {
+            bottom: 2px;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #03f40f);
+            animation: btn-anim1 2s linear infinite;
+        }
+
+        .title {
+            font-size: 28px;
+            color: #000000;
+            font-weight: 600;
+            letter-spacing: -1px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+        }
+        .title::before,.title::after {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            left: 0px;
+            background-color: green;
+        }
+
+        .title::before {
+            width: 18px;
+            height: 18px;
+            background-color: black;
+        }
+        .button1{
+            padding: 0.5em;
+            padding-left: 1.1em;
+            padding-right: 1.1em;
+            border-radius: 5px;
+            margin-right: 0.5em;
+            border: none;
+            outline: none;
+            transition: .4s ease-in-out;
+            background-color: #000000;
+            color: white;
+
+        }
+        .button1:hover{
+            background-color: #8B4513;
+            color: white;
+        }
+
+        .title::after {
+            width: 18px;
+            height: 18px;
+            animation: pulse 1s linear infinite;
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(0.9);
+                opacity: 1;
+            }
+
+            to {
+                transform: scale(1.8);
+                opacity: 0;
+            }
+        }
+    </style>
+    <script>
+        let  isemailvalid=true;
+        let ispassvalid=true;
+
+        function validation(){
+            if(document.getElementById("emailtxt").value==""){
+                isemailvalid=false;
+                document.getElementById("userError").innerHTML="Please fill up field with your email";
+                document.getElementById("userError").style.color="red";
+            }else if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(document.getElementById("emailtxt").value)==false){
+                isemailvalid=false;
+                document.getElementById("userError").innerHTML="Invalid email, it must contain @ charactor.";
+                document.getElementById("userError").style.color="red";
+            }else{
+                isemailvalid=true;
+                document.getElementById("userError").innerHTML="";
+            }
+
+            if(document.getElementById("pass").value==""){
+                ispassvalid=false;
+                document.getElementById("passError").innerHTML="Please provide your password."
+                document.getElementById("passError").style.color="red";
+            }else if(document.getElementById("pass").value.length < 8){
+                ispassvalid=false;
+                document.getElementById("passError").innerHTML="invalid password, it must have at list 8 charactors.";
+                document.getElementById("passError").style.color="red";
+            }else{
+                ispassvalid=true;
+                document.getElementById("passError").innerHTML="";
+            }
+
+
+            if(isemailvalid==false||ispassvalid==false){
+                return false;
+            }else{
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="box">
+    <div class="logo">
+        <a th:href="@{/}"> <img src=""  th:src="@{armyLogo1.jpg}" alt="" ></a>
+    </div>
+    <nav class="nav">
+        <ul>
+             <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/registration}">Create Account</a></li>
+
+        </ul>
+    </nav>
+</div>
+<div class="box2">
+    <div class="isi">
+
+        <center><font color="white" size="14"></font></center>
+    </div>
+    <div class="isi2">
+        <h1>Welcome to the Military management system </h1>
+    </div>
+
+</div>
+<div class="login-box">
+
+    <form th:action="@{/login}"   method="post" class="form" onsubmit="return validation()">
+        <h3 class="message">Signin Now with Email. </h3>
+
+        <div th:if="${param.error}">
+            <div class="alert alert-danger"> invalid Password or Username</div>
+        </div>
+
+        <div th:if="${param.logout}">
+            <div class="alert alert-danger">you have been logged out </div>
+        </div>
+        <p class="title">Login  </p>
+        <div class="user-box">
+
+            <input type="email"  id="emailtxt" name="email" >
+            <label>Email</label>
+            <div><span id="userError"></span></div>
+        </div>
+        <div class="user-box">
+            <input type="password" id="pass" name="password" >
+            <label>Password</label>
+            <div><span id="passError"></span></div>
+        </div><center>
+        <button class="button1">Login</button><br>
+
+        <span></span>
+        </a></center>
+    </form>
+</div>
+
+</div>
+</footer>
+</body>
+</html>
